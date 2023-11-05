@@ -1,0 +1,79 @@
+:root{
+    --bg-color-1: #0047be;
+    --bg-color-2: #fff;
+    --text-color-1: #ffffff;
+    --text-color-2: #ffb504;
+    --text-color-3: black;
+
+}
+*{
+    font-family: Roboto, Helvetica, Arial, serif;
+
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color-2);
+    padding: 1.5rem 7%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logozurag{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: var(--bg-color-2);
+}
+.header .logozurag img{
+    height: 100%;
+}
+.header .search-form{
+    background-color: var(--bg-color-1);
+    height: 4.5rem;
+    width: 50rem;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+}
+.header .search-form label{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--text-color-1);
+    cursor: pointer;
+}
+.header .navbar{
+    position: absolute;
+    top: 115%;
+    right: 3%;
+    background-color: var(--bg-color-2);
+    width: 25rem;
+    transform: scale(0);
+    transform-origin: top right;
+}
+.header .navbar.active{
+    transform: scale(1);
+}
+.header .navbar a{
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color-2);
+    border: 0.2rem solid var(--text-color-3);
+}
+.header .navbar a i {
+    color: var(--text-color-2);
+}
+.header .navbar a:hover{
+    color: var(--text-color-2);
+    background-color: var(--bg-color-2);
+    padding-left: 2rem;
+}
